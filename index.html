@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="my_style.css">
+  <script src="script.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body class="direc">
+  <nav class="navbar" id="navbar">
+    <div class="logo">ASL Converter</div>
+    <a href="http://127.0.0.1:5000/" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+
+    <div class="navbar-links">
+      <ul class="nav_links">
+        <!-- <li class="item"><a href="http://127.0.0.1:5000/">Go back to ASL Converter</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  <div class="box box1">
+    <h1>Directory</h1>
+    <br />
+    <br />
+    <input type="text" id="filter" onkeyup="searchfilter()" placeholder="Search for letter..." title="Type in a name">
+    <br />
+    <br />
+    <div class="container">
+      <div class="row g-5" id="directory">
+        <div class="col-4 mb-3">
+          <div class="card card1"><span class="name">A</span>
+            <br /><span class="title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Sign_language_A.svg/323px-Sign_language_A.svg.png" height="200px">
+            </span>
+            <br />
+            <p class="on-expand">
+              Hold your hand in front of you with your palm facing forward. Close your fingers in a fist, but keep your thumb pressed against the side of your hand and pointing upwards. 
+            </p>
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+          <div class="card card1"><span class="name">B</span>
+            <br /><span class="title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sign_language_B.svg/198px-Sign_language_B.svg.png" height="200px">
+            </span><br />
+            <p class="on-expand">
+              Extend your fingers so they are straight. Bring them in close to each other so they are touching on the sides. Then, fold your thumb across the front of your palm and hold it there. 
+            </p>
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+          <div class="card card1"><span class="name">C</span>
+            <br /><span class="title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sign_language_C.svg/416px-Sign_language_C.svg.png" height="200px">
+            </span><br />
+            <p class="on-expand">
+              Turn your right hand so that your palm is facing towards the left. Then, curl your fingers and thumb to form a half circle or backward “C.” Hold your hand still. 
+            </p>
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+          <div class="card card1"><span class="name">D</span>
+            <br /><span class="title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Sign_language_D.svg/242px-Sign_language_D.svg.png" height="200px">
+            </span><br />
+            <p class="on-expand">
+              Touch the tip of your thumb to every finger except your index finger. Then, point your index finger straight up. Hold your hand still with your palm facing forward. 
+            </p>
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+          <div class="card card1"><span class="name">E</span>
+            <br /><span class="title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sign_language_E.svg/286px-Sign_language_E.svg.png" height="200px">
+            </span><br />
+            <p class="on-expand">
+              Bend all four fingers down to meet your thumb. Press the tips of your fingers against the side of your thumb.
+            </p>
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+            <div class="card card1"><span class="name">F</span>
+                <br /><span class="title">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sign_language_F.svg/244px-Sign_language_F.svg.png"
+                        height="200px">
+                </span><br />
+                <p class="on-expand">
+                  Press your index finger and thumb together with straight fingers. Keep your other 3 fingers straight. 
+                </p>
+            </div>
+        </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">G</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Sign_language_G.svg/491px-Sign_language_G.svg.png" height="150px">
+          </span><br />
+          <p class="on-expand">
+            Gather your fingers in towards your palm to make a fist. Then, extend your index finger and rest your thumb against your middle finger. Keep your thumb about 0.5 in (1.3 cm) from your palm so that it is parallel to your index finger. Angle your hand so that your palm is facing you and your index finger is pointing to your left.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">H</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sign_language_H.svg/504px-Sign_language_H.svg.png" height="150px">
+          </span><br />
+          <p class="on-expand">
+            Keep your hand in the same position as it was for the letter “G,” but extend your middle finger as well. Hold your middle finger so it’s right next to your index finger. Angle your hand so that your palm is facing you and your index and middle fingers are pointing to your left.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">I</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sign_language_I.svg/286px-Sign_language_I.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Form a fist and poke your pinkie finger straight up.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">J</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sign_language_J.svg/466px-Sign_language_J.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            With your hand still in the position for the letter “I,” bring your finger down and then swoop it upwards in the shape of a letter “J.”
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">K</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sign_language_K.svg/283px-Sign_language_K.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your ring finger and pinkie finger against your palm. Hold your index and middle finger so they are straight up but spread apart in the shape of a V. Then, press your thumb against your palm so that the tip of your thumb is between your index and middle finger near where they meet your hand. 
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">L</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sign_language_L.svg/387px-Sign_language_L.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your middle, ring, and pinkie fingers against your palm as you form an L-shape with your index finger and thumb.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">M</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sign_language_M.svg/310px-Sign_language_M.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Curl your fingers down towards your palm with your thumb between your index and middle finger. Hold your fingers like you’re wrapping them around a ball. Then, poke your thumb between your ring and pinky finger.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">N</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Sign_language_N.svg/305px-Sign_language_N.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Curl your fingers as if they’re holding a ball. Then, push the tip of your thumb between your middle and ring fingers. 
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">O</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sign_language_O.svg/353px-Sign_language_O.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Make an "O" with your fingers and thumb. Press the tips of your fingers and thumb together. 
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">P</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sign_language_P.svg/530px-Sign_language_P.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your ring finger and pinkie finger against your palm. Then, extend your index finger as if you're pointing at something. Extend your middle finger so it's pointing down and touch it with your thumb. 
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">Q</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Sign_language_Q.svg/384px-Sign_language_Q.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your middle, ring, and pinkie fingers against your palm and point with your index finger. Then, rest your thumb on top of your middle finger . Then, point down with your hand in this position. 
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">R</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sign_language_R.svg/233px-Sign_language_R.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your ring finger, pinkie, and thumb against your palm. Then, wrap your middle finger around the back of your index finger. Hold your hand still with your palm facing forward.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">S</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sign_language_S.svg/336px-Sign_language_S.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            This is often confused with "A" so pay careful attention to the thumb position. Press your fingers against your palm and wrap your thumb over them.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">T</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sign_language_T.svg/341px-Sign_language_T.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your fingers against your palm. Then, push your thumb up between your index and middle finger.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">U</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sign_language_U.svg/246px-Sign_language_U.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your thumb, ring finger, and pinkie finger against your palm. Then, point your middle and index finger straight up and hold them against each other. 
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">V</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sign_language_V.svg/249px-Sign_language_V.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            With your hand in the “U” position, spread your fingers apart. This is the letter “V.” Make sure to keep your ring finger, pinkie, and thumb pressed against your palm.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">W</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sign_language_W.svg/280px-Sign_language_W.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your pinkie finger to your palm using your thumb. Then, hold up your index, middle, and ring fingers and spread them apart so that they look like the letter “W.”
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">X</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sign_language_X.svg/362px-Sign_language_X.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Press your thumb against your palm and then wrap your middle, ring, and pinkie fingers over it. Curl your index finger. 
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">Y</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sign_language_Y.svg/517px-Sign_language_Y.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            Stick out your pinkie and thumb for a “Y.” Press your other fingers against your palm.
+          </p>
+        </div>
+      </div>
+      <div class="col-4 mb-3">
+        <div class="card card1"><span class="name">Z</span>
+          <br /><span class="title">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sign_language_Z.svg/368px-Sign_language_Z.svg.png" height="200px">
+          </span><br />
+          <p class="on-expand">
+            
+              Write the letter “Z” in the air with your index finger. 
+          </p>
+        </div>
+      </div>
+  </div>
+    </div>
+  </div>
+</body>
+
+</html>
